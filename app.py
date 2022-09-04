@@ -17,10 +17,14 @@ socketio.init_app(app, cors_allowed_origins="*")
 users = []
 
 client = pymongo.MongoClient("mongodb+srv://AJ_15:ANAJESSICA@cluster0.7ylpe.mongodb.net/?retryWrites=true&w=majority")
+
 # client = pymongo.MongoClient(os.environ.get('MONGO_URI'))
 
 #get the database name
-db = client.get_database('coonnect_peeps')
+# db = client.get_database('coonnect_peeps')
+
+db = client.coonnect_peeps
+
 #get the particular collection that contains the data
 records = db.login
 
