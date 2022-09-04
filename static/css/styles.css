@@ -7,11 +7,39 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 }
+
+img{
+  float: left;
+  width: 350px;
+  height: 100px;
+  background: white;
+}
+
+.logout_button{
+  position:absolute;
+  right:20px;
+  top:20px;
+  height: 50px;
+  width: 160px;
+  font-family: Verdana;
+  font-size:x-large;
+  background-color: #194656;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  /* padding: 20px; */
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 .icon-row {
   display: grid;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   text-align: center;
 }
 .icon-row i {
@@ -24,14 +52,6 @@ body {
 .selected i {
   color: #0e71eb;
 }
-.pfp {
-  background-image: url("../img/default-avatar.png");
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  float: right;
-}
 .logo {
   font-family: "Lato", sans-serif;
   font-weight: 900;
@@ -42,10 +62,12 @@ body {
   margin: 0;
   user-select: none;
 }
+
+
 .main {
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,15 +89,16 @@ body {
   background-color: #f26d21;
 }
 .meetings-card {
-  height: 200px;
-  background-image: url("../img/72.jpg");
-  background-size: cover;
+  height: 380px;
+  background-image: url("https://img.freepik.com/free-vector/business-team-putting-together-jigsaw-puzzle-isolated-flat-vector-illustration-cartoon-partners-working-connection-teamwork-partnership-cooperation-concept_74855-9814.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
   background-position: center;
   display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: white; 
 }
 .pointer {
   cursor: pointer;
