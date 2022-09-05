@@ -16,7 +16,9 @@ CORS(app)
 socketio.init_app(app, cors_allowed_origins="*")
 users = []
 
-client = MongoClient("mongodb+srv://AJ_15:ANAJESSICA@cluster0.7ylpe.mongodb.net/?retryWrites=true&w=majority")
+# client = MongoClient("mongodb+srv://AJ_15:ANAJESSICA@cluster0.7ylpe.mongodb.net/?retryWrites=true&w=majority")
+
+client = MongoClient('mongodb+srv://AJ_15:ANAJESSICA@localhost:1000/?authSource=admin&readPreference=secondary&directConnection=true&ssl=false')
 
 # client = pymongo.MongoClient(os.environ.get('MONGO_URI'))
 
