@@ -47,6 +47,12 @@ pip install -r requirements.txt
 python app.py
 
 ```
+View it in
+
+```
+localhost:5000
+
+```
 ![c1](https://user-images.githubusercontent.com/82106569/188482719-6a80fd59-2493-4d1a-bdf9-9ba6677e3e20.png)
 ![c2](https://user-images.githubusercontent.com/82106569/188482722-c1c799c1-8bdd-4e2e-8e6d-fbb847cb528c.png)
 ![c3](https://user-images.githubusercontent.com/82106569/188482727-b9908f78-2f24-40e3-bb26-fcb41ece59aa.png)
